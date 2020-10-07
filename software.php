@@ -20,4 +20,4 @@ arrayDump(select($licenses,["name","count"]), 'Nombre de licences');
 
 
 //Test SelectWhere
-arrayDump(selectWhere($softs, ['name'], ['count',0]), 'Softs avec 0 licences');
+arrayDump(selectWhere($licenses, ['name'], ['count',0]), 'Softs avec 0 licences');

@@ -75,7 +75,7 @@ function select(array $array, array $selectFields):array{
 }
 
 function selectWhere(array $array, array $selectFields, array $where){
-    
+    return select(where($array, $where[0], $where[1]), $selectFields);
 }
 
 
